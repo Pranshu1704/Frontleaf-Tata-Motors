@@ -2039,7 +2039,7 @@ header .fa-bars{
     text-align: center;
   }
 
-  .chatbot-front iframe{
+  .chatbot-front {
     left: 82%;
   }
   
