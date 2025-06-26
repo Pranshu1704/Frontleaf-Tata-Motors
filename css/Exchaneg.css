@@ -1,0 +1,208 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1500px;
+  margin:  0px 300px;
+
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.features label {
+  white-space: nowrap;
+  font-size: 14px;
+}
+input[type="checkbox"]{
+    accent-color:#20B2ff ;
+}
+
+.radio-group label {
+  
+  width: 210px;
+  color: #00000063;
+}
+.radio-group .yes-{
+    margin-right: 20%;
+    margin-left: 10%;
+}
+input[type="radio"] {
+  accent-color: #20B2ff;
+}
+
+
+.condition-table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  overflow-x: auto;
+   /* margin: 0% 10%; */
+}
+
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 480px;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #00000023;
+}
+
+button {
+  background-color: #00a9f4;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 220px;
+}
+
+
+button:hover{
+    background-color: #066996;
+    transform: scale(1.05);
+}
+button:active{
+    transform: scale(0.95);
+    box-shadow: 0px 0px 10px #000000b4;
+}
+
+
+.containers-model h1{
+   width: max-content;
+   margin: 3% 0% 2% 15%;
+   font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 5px solid #20B2FF;
+   
+}
+
+@media (max-width: 1656px) {
+  .container {
+    margin: 0px 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0px 30px;
+    max-width: 100%;
+  }
+  .condition-table {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    margin: 0px 10px;
+    padding: 0 5px;
+  }
+  .rows, .features, .condition-table {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px 5px 20px 15px;
+  }
+  table {
+    max-width: 100%;
+    font-size: 14px;
+  }
+  button {
+    width: 100%;
+    padding: 12px 0;
+  }
+  .containers-model h1 {
+   margin: 3% 0% 2% 15%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+  .container {
+    /* margin: 0; */
+    padding: 0;
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  select,
+  textarea {
+    min-width: 100px;
+    padding: 8px;
+    font-size: 14px;
+  }
+  th, td {
+    padding: 6px;
+    font-size: 13px;
+  }
+  .containers-model h1 {
+    font-size: 1.1rem;
+    margin: 5% 0% 5% 2%;
+    border-width: 3px;
+  }
+  .radio-group .yes-{
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .containers-model h1 {
+    font-size: 1.2em;
+    border-width: 3px;
+  }
+  button {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}

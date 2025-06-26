@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Car Form</title>
+  <link rel="stylesheet" href="css/Exchaneg.css">
+  <link rel="stylesheet" href="css/new.css">
+  <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+ <header>
+    <div class="main">
+       
+            <img alt="Frontleaf Motors logo" src="img/logo.png"   class ="logo">
+       
+           <div class="bar">
+                 <i class="fa-solid fa-bars" id="menu-toggle"></i>
+              </div>    
+        <div class ="header-right ">
+            <ul class="topnav-clearfix">
+                <li title="Tata Cars"><a href="new.html">Tata Cars</a></li>
+                <li title="Get a Quote" onclick="openModal()" >Get a Quote</li>
+                <li title="Outlets"><a href="outlets.html">Outlets</a></li>
+                <li id="Contact"><a href="Contact.html">Contact Us</a></li>
+            </ul>
+         <span class="contactdetails">
+                 <span class="noelement">
+                      <span class="light">Sales:</span>
+                      <span class="dark"><a href="tel:+919238453755">+91 9238453755</a></span>
+                  </span>
+                    <span class="noelement">
+                    <span class="light">Service: </span>
+                    <span class="dark noborder"><a href="tel:+919238444036">+91 9238444036</a>
+                    </span>
+                    </span>
+                   <span class="noelement">
+                    <span class="light">Insurance: </span>
+                    <span class="dark noborder"><a href="tel:+917400981528">+91 7400981528</a>
+                    </span>
+                    </span>
+                   
+                    
+             </span>
+             
+
+        </div>
+     
+        
+    </div> 
+ 
+    <nav id="navbar">
+   
+      <ul >
+        <li class="brand-name">Frontleaf Motors.</li>
+        <li ><a href="index.html" >Home</a></li>
+        <li><a href="new.html">New Cars</a></li>
+        <li class="used"><a href="#" >Used Cars <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="dropdown">
+        
+                <li><a href="buycar.html" >Buy Used Car</a></li>
+                <li><a href="exchange.html" >Exchange</a></li>
+            </ul>
+         </li>   
+                       
+        <li class="Offer"><a href="offer.html">Offer</a></li>
+        <li class="drive"><a href="Booktest.html">Drive Booking </a></li>
+        <li class="Book"><a href="bookservice.html">Book Services</a></li>
+        <li class="Insurance"><a href="insurace.html">Insurance</a></li>
+        <li class="more"><a href="#">More <i class="fa-solid fa-angle-down"></i></a>
+         <ul class="dropdown">
+        <li><a href="accessories.html" >Accessories</a></li>
+        <li><a href="outlets.html" >Outlets</a></li>
+        <li><a href="finance.html" >Finance</a></li>
+        <li><a href="Career.html" >Career</a></li>
+        <li><a href="gallery.html" >Gallery</a></li>
+        <li><a href="blog.html" >Blogs</a></li>
+        <li><a href="about .html" >About Us</a></li>
+        <li class="Same"  onclick="openModal()">Get Quote </li>
+        <li class="Same"><a href="Contact.html" >Contact Us</a></li>
+     </ul>
+     </li>
+     </ul>
+      
+     </nav>
+ </header>
+
+  <section>
+    <div class="name">
+        <h1>Exchange Car</h1>
+        <p>Sell Car</p></div>
+    </div>
+
+    <div class ="direction"> <div><a href="index.html" class="home">Home </a>
+        <span class="first"><i class="fa-solid fa-chevron-right"></i></span><a class="tags-nme"><i id="right" class="fa-solid fa-chevron-right"></i> Exchnage Car</a>
+        </div>
+    </div>
+  </section>
+ 
+ <section class="containers-model">
+    <h1>Exchange Car Details</h1>
+  </section>
+
+  <div class="container">
+    <h3>My Contact Details</h3>
+    <div class="rows">
+      <input type="text" placeholder="Name*" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Mobile No*" required>
+    </div>
+
+    <h3>Car Details</h3>
+    <div class="rows">
+      <select required><option>Select Brand*</option>
+        <option>Tata</option>
+        <option>Other</option>
+        </select>
+    </select>
+      <select required><option>Select Model*</option>
+          <optgroup label="Current Models">
+    <option value="Punch">Punch</option>
+    <option value="Punch EV">Punch EV</option>
+    <option value="Nexon">Nexon</option>
+    <option value="Nexon EV">Nexon EV</option>
+    <option value="Tiago">Tiago</option>
+    <option value="Tiago EV">Tiago EV</option>
+    <option value="Tigor">Tigor</option>
+    <option value="Tigor EV">Tigor EV</option>
+    <option value="Altroz">Altroz</option>
+    <option value="Altroz Racer">Altroz Racer</option>
+    <option value="Harrier">Harrier</option>
+    <option value="Safari">Safari</option>
+  </optgroup>
+
+  <!-- Discontinued Models -->
+  <optgroup label="Discontinued Models">
+    <option value="Indica">Indica</option>
+    <option value="Indigo">Indigo</option>
+    <option value="Bolt">Bolt</option>
+    <option value="Zest">Zest</option>
+    <option value="Nano">Nano</option>
+    <option value="Sumo">Sumo</option>
+    <option value="Hexa">Hexa</option>
+    <option value="Aria">Aria</option>
+    <option value="Manza">Manza</option>
+    <option value="Estate">Estate</option>
+    <option value="Sierra">Sierra</option>
+    <option value="Telcoline">Telcoline</option>
+    <option value="Venture">Venture</option>
+    <option value="Winger">Winger</option>
+    <option value="Spacio">Spacio</option>
+  </optgroup>
+</select>
+      <select required><option>Select Variant*</option>
+        <option> Petrol</option>
+        <option > Diesel</option>
+        <option > EV</option>
+      </select>
+      <select required>
+   <option>Manufacturing Year*</option>
+  <option value="2025">2025</option>
+  <option value="2024">2024</option>
+  <option value="2023">2023</option>
+  <option value="2022">2022</option>
+  <option value="2021">2021</option>
+  <option value="2020">2020</option>
+  <option value="2019">2019</option>
+  <option value="2018">2018</option>
+  <option value="2017">2017</option>
+  <option value="2016">2016</option>
+  <option value="2015">2015</option>
+  <option value="2014">2014</option>
+  <option value="2013">2013</option>
+  <option value="2012">2012</option>
+
+ </select>
+    </div>
+    <div class="rows">
+      <select required><option>Owner*</option>
+        <option> First Owner </option>
+        <option> Second Owner </option>
+        <option> Third Owner </option>
+        <option> Fourth Owner </option>
+      </select>
+      <select><option>Color*</option>
+         <option value="Orcus White">Orcus White</option>
+  <option value="Daytona Grey">Daytona Grey</option>
+  <option value="Oberon Black">Oberon Black</option>
+  <option value="Tropical Mist">Tropical Mist</option>
+  <option value="Flame Red">Flame Red</option>
+  <option value="Calypso Red">Calypso Red</option>
+  <option value="Arizona Blue">Arizona Blue</option>
+  <option value="Harbour Blue">Harbour Blue</option>
+  <option value="Grassland Beige">Grassland Beige</option>
+  <option value="Atomic Orange">Atomic Orange</option>
+  <option value="Cosmo Dark">Cosmo Dark</option>
+  <option value="High Street Gold">High Street Gold</option>
+  <option value="Meteor Bronze">Meteor Bronze</option>
+  <option value="Seaweed Green">Seaweed Green</option>
+  <optgroup label=" Dual-Tone Options" >
+  <option value="Flame Red with Black Roof">Flame Red with Black Roof</option>
+  <option value="Daytona Grey with Black Roof">Daytona Grey with Black Roof</option>
+  <option value="Orcus White with Black Roof">Orcus White with Black Roof</option>
+  <option value="Arizona Blue with Black Roof">Arizona Blue with Black Roof</option>
+  <option value="Tropical Mist with Black Roof">Tropical Mist with Black Roof</option>
+  </optgroup>
+  <optgroup label="EV Cars">
+  <option value="Signature Teal Blue">Signature Teal Blue</option>
+  <option value="Midnight Plum">Midnight Plum</option>
+  <option value="Empowered Oxide">Empowered Oxide</option>
+  <option value="Pristine White">Pristine White</option>
+  <option value="Fearless Purple">Fearless Purple</option>
+  <option value="Creative Ocean">Creative Ocean</option> 
+  </optgroup>
+</select>
+      </select>
+      <input type="text" placeholder="KM*">
+      <select required><option>Select Outlet City*</option>
+        <option> Rewa</option>
+        <option>Other</option>
+    
+       </select>
+    </div>
+    <div class="rows">
+      <input type="text" placeholder="Registration No">
+      <input type="text" placeholder="Registration City">
+      <input type="text" placeholder="Car Insurance Type">
+      <input type="text" placeholder="Insurance Expiry Date">
+    </div>
+    <div class="rows radio-group">
+      <div class="yes-"><label>Is Car Accidental</label> <input type="radio" name="accident" value="yes"> YES <input type="radio" name="accident" value="no"> NO</div>
+      <div class="no-"><label>Is Car Flood Affected</label> <input type="radio" name="flood" value="yes"> YES <input type="radio" name="flood" value="no"> NO</div>
+    </div>
+
+    <h3>Installed Features</h3>
+    <div class="features">
+      <label><input type="checkbox"> DRIVER AIRBAG</label>
+      <label><input type="checkbox"> PASSENGER AIRBAG</label>
+      <label><input type="checkbox"> ANTILOCK BRAKING SYSTEM</label>
+      <label><input type="checkbox"> ENGINE IMMOBILIZER</label>
+      <label><input type="checkbox"> CHILD SAFETY LOCKS</label>
+      <label><input type="checkbox"> TRACTION CONTROL</label>
+    </div>
+
+    <h3>Car Condition</h3>
+    <div class="condition-table">
+      <table>
+        <tr>
+          <th></th><th>Excellent</th><th>Good</th><th>Fair</th><th>Poor</th>
+        </tr>
+        <tr><td>Air Conditioning</td><td><input type="radio" name="ac"></td><td><input type="radio" name="ac"></td><td><input type="radio" name="ac"></td><td><input type="radio" name="ac"></td></tr>
+        <tr><td>Battery Condition</td><td><input type="radio" name="battery"></td><td><input type="radio" name="battery"></td><td><input type="radio" name="battery"></td><td><input type="radio" name="battery"></td></tr>
+        <tr><td>Brakes Condition</td><td><input type="radio" name="brakes"></td><td><input type="radio" name="brakes"></td><td><input type="radio" name="brakes"></td><td><input type="radio" name="brakes"></td></tr>
+        <tr><td>Car Electricals</td><td><input type="radio" name="electricals"></td><td><input type="radio" name="electricals"></td><td><input type="radio" name="electricals"></td><td><input type="radio" name="electricals"></td></tr>
+        <tr><td>Car Engine</td><td><input type="radio" name="engine"></td><td><input type="radio" name="engine"></td><td><input type="radio" name="engine"></td><td><input type="radio" name="engine"></td></tr>
+        <tr><td>Seat Condition</td><td><input type="radio" name="seat"></td><td><input type="radio" name="seat"></td><td><input type="radio" name="seat"></td><td><input type="radio" name="seat"></td></tr>
+      </table>
+      <table>
+        <tr>
+          <th></th><th>Excellent</th><th>Good</th><th>Fair</th><th>Poor</th>
+        </tr>
+        <tr><td>Suspensions</td><td><input type="radio" name="suspension"></td><td><input type="radio" name="suspension"></td><td><input type="radio" name="suspension"></td><td><input type="radio" name="suspension"></td></tr>
+        <tr><td>Tyres Condition</td><td><input type="radio" name="tyres"></td><td><input type="radio" name="tyres"></td><td><input type="radio" name="tyres"></td><td><input type="radio" name="tyres"></td></tr>
+        <tr><td>Interior Condition</td><td><input type="radio" name="interior"></td><td><input type="radio" name="interior"></td><td><input type="radio" name="interior"></td><td><input type="radio" name="interior"></td></tr>
+        <tr><td>Exterior Condition</td><td><input type="radio" name="exterior"></td><td><input type="radio" name="exterior"></td><td><input type="radio" name="exterior"></td><td><input type="radio" name="exterior"></td></tr>
+        <tr><td>Overall Car Condition</td><td><input type="radio" name="overall"></td><td><input type="radio" name="overall"></td><td><input type="radio" name="overall"></td><td><input type="radio" name="overall"></td></tr>
+      </table>
+    </div>
+
+    <h3>Additional Features</h3>
+    <div class="rows">
+      <textarea placeholder="Available Warranties"></textarea>
+      <textarea placeholder="Major Modifications"></textarea>
+      <textarea placeholder="Special Note"></textarea>
+    </div>
+    <div class="rows">
+      <label><input type="file"> </label>
+    </div>
+    <div class="rows">
+      <button type="submit">Sell Car Now</button>
+    </div>
+  </div>
+
+
+
+    <hr>
+    <section id="customers-contact">
+        <div class="customer-call">
+      <div class="call-logo"><i class="fa-solid fa-phone"></i></div>
+      <div>Contact Us:<br><a href="tel:+919238444036">+91 9238444036</a></div>
+      </div>
+      <div class="customer-mail">
+      <div class="mail-logo"><i class="fa-regular fa-envelope"></i></div>
+      <div>General Queries:<br><a href="mailto:service.manager@frontleafmotors.com">service.manager@frontleafmotors.com</a></div>
+      </div>
+      <div class="customer-cmail">
+      <div class="mail-care"><i class="fa-regular fa-envelope"></i></div>
+      <div>Tata Cars complaints:<br><a href="mailto:crm.service@frontleafmotors.com">crm.service@frontleafmotors.com</a></div>
+      </div>
+      <div class="office-time">
+       <div class="timing"><i class="fa-regular fa-clock"></i></div>
+       <div> Working Hours <br> <span>9:30 AM - 7:00 PM</span></div>
+       </div>
+       
+    </section>
+    <!-- <hr> -->
+    <footer>
+        <div id="footer">
+        <div class="Tata-cars"><a href="new.html"><h4>TATA CARS</h4></a>
+            <li>Tata Curvv</li>
+            <li>Tata Punch</li>
+            <li>Tata Tiago</li>
+            <li>Tata Tigor</li>
+            <li>Tata Altroz</li>
+            <li>Tata Altroz Racer</li>
+            <li><a href="new.html">More....</a></li>
+        </div>
+
+
+        <div class="outlet">
+          <a href="outlets.html"><h4> OUTLETS</h4></a>
+            <lI><a href="showroom.html">Showrooms</a></lI>
+            <li><a href="Workshop.html">Workshops</a></li>
+        </div>
+
+        <div class="USED"><h4>USED CARS</h4>
+            <li><a href="buycar.html">Buy Cars</a></li>
+            <li><a href="exchange.html">Sell Cars</a></li>
+        </div>
+
+        <div class="About-us"><h4>ABOUT US</h4>
+            <li><a href="about .html">About Frontleaf Motors.</a></li>
+            <li><a href="gallery.html"> Gallery</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="Career.html">Career</a></li>
+        </div>
+        </div>
+
+        <div class="follow">
+            <a href="https://www.instagram.com/frontleaf_motors/" class="social1"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@frontleafmotors?si=PCmT6vnnGLD8pmeV" class="social2"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/share/1CecP18X9F/?mibextid=wwXIfr" class="social3"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/frontleafmotors?s=11" class="social4"><i class="fa-brands fa-x-twitter"></i></a>
+
+
+        </div>
+
+        <div id="copyright">
+            <div class="terms">
+                
+                <li title="Tata Cars"><a href="t&c.html">Terms & condition</a></li>
+                <li title="Get a Quote"><a href="privacy.html">Privacy Policy</a></li>
+                <li title="Outlets"><a href="disclaimer.html">Disclaimer</a></li>
+                <li id="Contact">Sitemap</li>
+            </ul>
+            </div>
+            <div class="cred-design">  All Rights Reserved.<br><div>@Copyright Frontleaf TATA Motors.</div></div>   
+            <div class="cred-tag">Site Designed & Developed by </div>
+            <!-- Pranshu gupta. -->
+                         
+        </div >
+
+    </footer>
+
+<!-- Overlay Background -->
+<div class="overlay-bg" id="quoteOverlay">
+  <div class="modal">
+    <div class="quote-x">
+      <span class="close-button" onclick="closeModal()">×</span>
+      <h2>GET A QUOTE</h2>
+    </div>
+    <div class="modal-content">
+      <form class="quote-form">
+        <div class="form-row">
+          <select required>
+            <option value="" disabled selected>Select Model*</option>
+            <option>TATA Tiago</option>
+            <option>Tata Harrier</option>
+            <option>Tata Altroz</option>
+            <option>Tata Curvv</option>
+            <option>Tata Punch</option>
+            <option>Tata Nexon EV</option>
+            <option>Tata Punch EV</option>
+            <option>Tata Tiago EV</option>
+            <option>Tata Safari</option>
+            <option>Tata Tigor</option>
+            <option>Tata Tiago NRG</option>
+            <option>Tata Tigor EV</option>
+            <option>Tata Altroz Racer</option>
+            <option>Tata Yodha Pickup</option>
+          </select>
+          <input type="email" placeholder="Email" required>
+        </div>
+
+        <div class="form-row">
+          <input type="text" placeholder="Name*" required>
+          <input type="tel" placeholder="Mobile No*" required>
+        </div>
+
+        <div class="form-row">
+          <select required>
+            <option value="" disabled selected>Select City</option>
+            <option>Bhopal</option>
+            <option>Indore</option>
+            <option>Jabalpur</option>
+            <option>Gwalior</option>
+            <option>Ujjain</option>
+            <option>Rewa</option>
+            <option>Sagar</option>
+            <option>Satna</option>
+            <option>Chhindwara</option>
+            <option>Dewas</option>
+            <option>Katni</option>
+            <option>Khandwa</option>
+            <option>Ratlam</option>
+            <option>Seoni</option>
+            <option>Sehore</option>
+            <option>Shivpuri</option>
+          </select>
+          <select required>
+            <option value="" disabled selected>Select Outlet</option>
+            <option>Frontleaf Tata Rewa</option>
+          </select>
+        </div>
+
+        <p class="note">* All Fields Marked are Mandatory</p>
+
+        <button type="submit" class="quote-button">GET A QUOTE</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="chatbot-front">
+    <div id="chatbot-button">
+    <i class="fa-solid fa-comment-dots"></i>
+  </div>
+
+  <div id="chatbot-window" class="hiddens">
+    <div class="chatbot-header">Frontleaf Chatbot</div>
+    <div class="chatbot-messages" id="chatbox">
+      <div class="bot-msg">Hi! How can I assist you today?</div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+</div>
+<script src="js/chatbot.js"></script>
+
+<script>
+    function openModal() {
+        document.getElementById('quoteOverlay').style.display = 'flex';
+    }
+
+    function closeModal() {
+        document.getElementById('quoteOverlay').style.display = 'none';
+    }
+
+</script>
+
+    <script src="js/app.js"></script>
+    <script src="js/html.js"></script>
+   <script src="js/menu.js"></script>
+   
+</body>
+</html>
